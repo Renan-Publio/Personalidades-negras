@@ -7,41 +7,42 @@
   <title>Grandes personalidades Negras</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script>document.documentElement.className += ' js';</script>
 </head>
 
 <body>
-  <nav class=" menu">
+  <nav class="menu js-menu">
     <ul>
       <li><a href="#personalidades">Personalidades</a></li>
       <li><a href="#Movimentos">Movimentos</a></li>
       <li><a href="#contato">Contato</a></li>
-      <li><a href="https://www.linkedin.com/in/renan-souza-681ba1232/">Dev →</a></li>
+      <li><a href="https://www.linkedin.com/in/renan-souza-681ba1232/" target="_blank">Dev →</a></li>
     </ul>
   </nav>
-  <section class="grid-section ps" id="people">
+  <section class="grid-section ps js-scroll"" id=" people">
     <h1 class="titulo">Personalidades Negras </h1>
-    <ul class="lista-influenciadores">
+    <ul class="lista-influenciadores js-tabmenu">
       <li>
-        <img src="img/Martin-luther.jpg" alt="Martin-luther-King-JR">
+        <img src="img/Martin-luther.jpg" alt="Martin-luther-King-JR" onclick="mostrarAba(1)">
       </li>
       <li>
-        <img src="img/Dandara.jpg" alt="Dandara-dos-palmares">
+        <img src="img/Dandara.jpg" alt="Dandara-dos-palmares" onclick="mostrarAba(2)">
       </li>
       <li>
-        <img src="img/Malcolm-x.jpg" alt="Malcolm-little">
+        <img src="img/Malcolm-x.jpg" alt="Malcolm-little" onclick="mostrarAba(3)">
       </li>
       <li>
-        <img src="img/Angela-davis.jpg" alt="Angela-davis">
+        <img src="img/Angela-davis.jpg" alt="Angela-davis" onclick="mostrarAba(4)">
       </li>
       <li>
-        <img src="img/Milton-Santos.jpg" alt="Milton-Santos">
+        <img src="img/Milton-Santos.jpg" alt="Milton-Santos" onclick="mostrarAba(5)">
       </li>
       <li>
-        <img src="img/Rosa-parks.jpg" alt="Rosa-parks">
+        <img src="img/Rosa-parks.jpg" alt="Rosa-parks" onclick="mostrarAba(6)">
       </li>
     </ul>
-    <div class="Descrição-personalidades">
-      <section>
+    <div class="Descrição-personalidades js-tabcontent" id="Personalidades">
+      <section id="aba1" class="tab active-tab">
         <h2>Martin Luther King Jr.</h2>
         <p>Martin Luther King Jr. (1929-1968) foi um ativista norte-americano, lutou contra a discriminação racial e tornou-se um dos mais importantes líderes dos movimentos pelos direitos civis dos negros nos Estados Unidos. Recebeu o Prêmio Nobel da Paz em 1964</p>
         <p>Em 1951 formou-se em Teologia na Universidade de Boston. Convertido em pastor, em 1954, Martin Luther King assumiu a função de pastor em uma igreja na cidade de Montgomery, no Alabama.</p>
@@ -49,7 +50,7 @@
         </p>
         <p>Sua luta persistiu, liderando a marcha de Selma a Montgomery em 1965. Tragicamente, sua vida foi interrompida por um assassinato em 1968, enquanto apoiava uma greve de lixeiros em Memphis. Seu legado perdura, com homenagens como a Medalha Presidencial da Liberdade em 1977 e a Medalha de Ouro do Congresso Americano em 2004, pelos 50 anos da Lei dos Direitos Civis.</p>
       </section>
-      <section>
+      <section id="aba2" class="tab">
         <h2>Dandara dos Palmares</h2>
         <p>Dandara dos Palmares viveu no Brasil colonial no século XVII e se destacou como uma figura icônica na luta contra a escravidão. Ela foi uma guerreira no Quilombo dos Palmares, uma comunidade de fugitivos escravizados que resistiram ao sistema opressivo.
         </p>
@@ -57,14 +58,14 @@
         <p>Sua bravura e determinação inspiraram outros a se unirem na busca pela liberdade.Ela é lembrada por suas habilidades de combate e sua dedicação à causa da emancipação. </p>
         <p> Dandara dos Palmares se tornou um símbolo de resistência e força no movimento negro brasileiro. Seu legado perdura como um lembrete poderoso da luta histórica contra a escravidão e da busca pela igualdade e justiça para os afro-brasileiros.</p>
       </section>
-      <section>
+      <section id="aba3" class="tab">
         <h2>Malcolm X</h2>
         <p>Malcolm X (1925-1965) foi um influente líder dos direitos civis nos Estados Unidos, conhecido por sua defesa dos direitos e da igualdade dos negros. Inicialmente associado à Nação do Islã, uma organização muçulmana negra, ele mais tarde se distanciou de suas visões radicais.</p>
         <p>Malcolm X enfatizou a autossuficiência e a resistência à opressão. Sua retórica contundente e seu ativismo inspiraram muitos a questionar o racismo sistêmico. Ele também defendia a autodescoberta e a educação como meios de capacitar a comunidade negra.</p>
         <p>Após sua peregrinação a Meca em 1964, Malcolm X adotou uma visão mais inclusiva do Islã e se afastou do separatismo racial. No entanto, sua vida foi tragicamente interrompida em 1965, quando foi assassinado em um evento relacionado à rivalidade entre facções da Nação do Islã.</p>
         <p>Malcolm X deixou um legado duradouro como defensor dos direitos civis e da justiça social, e suas palavras continuam a inspirar a busca por igualdade e empoderamento entre os afro-americanos.</p>
       </section>
-      <section>
+      <section id="aba4" class="tab">
         <h2>Angela Davis</h2>
         <p>Angela Davis (nascida em 1944) é uma renomada ativista, escritora e acadêmica dos Estados Unidos. Ela é mais conhecida por seu ativismo pelos direitos civis, igualdade racial e justiça social nas décadas de 1960 e 1970.</p>
         <p>Davis era membro ativo do Partido Comunista dos EUA e se envolveu em questões relacionadas à prisão e ao sistema de justiça criminal. Ela ficou famosa por sua prisão e julgamento em 1970, quando foi acusada de conspiração em um tiroteio em um tribunal.</p>
@@ -72,14 +73,14 @@
         <p>Angela Davis é uma figura inspiradora que dedicou sua vida à luta contra a opressão e a busca por um mundo mais justo e igualitário.
         </p>
       </section>
-      <section>
+      <section id="aba5" class="tab">
         <h2>Milton Santos</h2>
         <p>Milton Santos (1926-2001) foi um proeminente geógrafo brasileiro. Reconhecido internacionalmente, ele revolucionou a geografia crítica com seu trabalho inovador. Sua abordagem considerava o espaço geográfico como um reflexo das relações sociais e políticas, indo além da geografia tradicional.</p>
         <p>Santos defendia a importância de uma geografia comprometida com a justiça social e a equidade. Ele analisou questões como urbanização, globalização e desigualdades espaciais. Sua obra mais conhecida, "Por uma outra globalização", criticou as desigualdades do sistema econômico global.</p>
         <p>Além de suas contribuições acadêmicas, Milton Santos foi um defensor incansável dos direitos humanos e do desenvolvimento sustentável. Sua influência se estendeu além da academia, inspirando muitos a abordar questões geográficas sob uma perspectiva crítica e socialmente consciente.</p>
         <p>O legado de Milton Santos perdura como um farol para a geografia crítica e para aqueles que buscam compreender e transformar o mundo em busca de uma sociedade mais justa e igualitária.</p>
       </section>
-      <section>
+      <section id="aba6" class="tab">
         <h2>Rosa Parks</h2>
         <p>Rosa Parks (1913-2005) foi uma notável ativista dos direitos civis nos Estados Unidos. Em 1955, ela desafiou a segregação racial ao se recusar a ceder seu assento a um homem branco em um ônibus em Montgomery, Alabama</p>
         <p> Sua prisão desencadeou o famoso boicote aos ônibus de Montgomery, liderado por Martin Luther King Jr.Parks era uma costureira e membro ativo da NAACP, que lutava contra a discriminação racial. Seu ato de coragem inspirou outros a se levantarem contra a injustiça racial.</p>
@@ -88,9 +89,9 @@
       </section>
     </div>
   </section>
-  <section class="grid-section movimentoNegro" id="movimentoNegro">
+  <section class="grid-section movimentoNegro js-scroll" id="Movimentos">
     <h1 class="titulo">Movimentos negros</h1>
-    <dl class="movimentosNegros-lista">
+    <dl class="movimentosNegros-lista js-accordion">
       <dt>Panteras negras</dt>
       <dd>O Movimento Panteras Negras, fundado em 1966, foi uma organização revolucionária nos EUA. Focada na luta contra o racismo e a brutalidade policial, destacou-se pela "patrulha da polícia" nas comunidades negras e pela criação de programas sociais. Sofrendo repressão do governo, o movimento deixou um legado de resistência e conscientização sobre questões raciais, sendo um ícone da luta por justiça e igualdade.
       </dd>
@@ -99,7 +100,7 @@
     </dl>
   </section>
 
-  <section class="grid-section contato" id="contato">
+  <section class="grid-section contato js-scroll" id=" contato">
     <h1 class="titulo">Contato</h1>
     <ul class="dados">
       <li>renanpublionascimento@gmail.com</li>
@@ -107,10 +108,11 @@
       <li>https://github.com/Renan-Publio</li>
     </ul>
   </section>
-  <Footer class="copy">
+  <footer class="copy">
     <p>Todos os direitos reservados Renan Souza 2023</p>
-  </Footer>
-  <script src="main.js"></script>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
