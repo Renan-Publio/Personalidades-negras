@@ -160,18 +160,13 @@ body {
   grid-column: 2;
 }
 
-.dados li {
-  margin-bottom: 1rem;
-  font-family: Helvetica, Arial;
+.dados i {
+  width: 50px;
+  height: 50px;
+  color: #e54;
 }
-
-.dados li::before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 10px;
-  margin-right: 10px;
-  background: #fb5;
+.dados i:hover {
+  color: #fb5;
 }
 
 .copy {
@@ -253,6 +248,7 @@ body {
 .js-accordion dd.ativo {
   display: block;
   animation: slideDown 0.5s forwards;
+  margin: auto;
 }
 
 @keyframes slideDown {

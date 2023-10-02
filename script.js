@@ -71,3 +71,24 @@ function initAnimaçaoScroll() {
 }
 
 initAnimaçaoScroll();
+
+document.addEventListener('DOMContentLoaded', function () {
+  var icons = document.querySelectorAll('.dados i');
+
+  icons.forEach(function (icon) {
+    icon.addEventListener('click', function () {
+      var link;
+      if (this.classList.contains('fa-whatsapp')) {
+        link = 'https://wa.me/5521996286420';
+      } else if (this.classList.contains('fa-envelope')) {
+        link = 'mailto:renanpublionascimento@gmail.com';
+      } else if (this.classList.contains('fa-github')) {
+        link = 'https://github.com/Renan-Publio';
+      }
+
+      if (link) {
+        window.open(link, '_blank');
+      }
+    });
+  });
+});
